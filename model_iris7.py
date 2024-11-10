@@ -15,7 +15,7 @@ st.sidebar.title('User Input Parameters :')
 sep_l=st.sidebar.slider('Sepal length', 0, 10)
 sep_w=st.sidebar.slider('Sepal width', 0, 6)
 pet_l=st.sidebar.slider('Petal length', 0, 10)
-sep_w=st.sidebar.slider('Petal width', 0, 6)
+pet_w=st.sidebar.slider('Petal width', 0, 6)
 
 data=pd.DataFrame([sep_l,sep_w,pet_l,pet_w]).T
 model=pickle.load(open('modeliris6.pkl','rb'))
